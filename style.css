@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* input area */
+
+.icon{
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: gray;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+    margin-left: -2em;
+}
+
+.icon:hover{
+    opacity: 0.8;
+}
+
+input{
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    background: #eeeeee;
+    display: block;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    width: 60%;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 3px grey;
+    background-color: white;
+}
+
+.input-value{
+    margin: 1em 0 1em 0.8em;
+}
+
+
+/* main-image area*/
+.main-image-container{
+    box-sizing: border-box;
+    height: 50vh;
+    width: 100%;
+    background-color: linear-gradient(0deg, rgba(163,158,158,1) 0%, rgba(0,0,0,1) 100%);
+    ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5em;
+    padding-left: 1.5em;
+}
+
+h2{
+    margin-bottom: 0.5em;
+}
+
+.main-text-span{
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+
+/* image container area*/
+/* unless the height of images are predefined, I can't use grid to fill up the gaps between rows. out of css capacity*/
+
+.image-container{
+    margin-top: 2em;
+
+}
+
+.image-container div{
+    width: 100%;
+}
+
+.each-img{
+    width: 100%;
+    margin-top:0;
+    margin-bottom: 1em;
+
+}
+
+.result{
+    text-align: center;
+}
+
+@media (min-width: 800px){
+
+    .main-image-container{
+        align-items: center;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+    
+    p{
+        font-size: 1.5em;
+    }
+
+    .image-container{
+        column-count: 2;
+        margin-top: 2em;
+
+    }
+
+    input{
+        width: 50%;
+    }
+
+    .input-value{
+        width: 100%;
+    } 
+}
+
+@media (min-width: 1000px) {
+    .image-container{
+        max-width: 1300px;
+        padding: 0 1em;
+        margin: 0 auto;
+        column-count: 3;
+        margin-top: 2em;
+    }
+
+    .main-image-container{
+        height: 50vh;
+    }
+
+    input{
+        width: 45%;
+    }
+}
