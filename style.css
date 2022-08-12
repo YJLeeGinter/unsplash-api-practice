@@ -51,6 +51,10 @@ input:focus{
     margin: 1em 0 1em 0.8em;
 }
 
+.random-photo-title{
+    text-align: center;
+    color: darkgray;
+}
 
 /* main-image area*/
 .main-image-container{
